@@ -12,34 +12,92 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <a href="#">Home</a>
-                    <a href="#">About me</a>
-                    <a href="#">Contact us</a>
-                </ul>
+            <nav style="display: flex; justify-content: space-between;padding:15px;">
+                <div>
+                    <a href="#">Logo</a>
+                </div>
+                <div>
+                    <a href="/index.html" style="padding: 12px; text-decoration:none;color:black;">Home</a>
+                    <a href="/about.html" style="padding: 12px;text-decoration:none;color:black;">About me</a>
+                    <a href="/contact.html" style="padding: 12px;text-decoration:none;color:black;">Contact us</a>
+                </div>
+                   
             </nav>
         </header>
-        <section>
-            <div>
-                <h1>Tshegofatso Mailula</h1>
+   <section style="width: 100%; height: 712px; background-color:gray;">
+    <img 
+        src="/me.jpg" 
+        alt="A picture of Tshegofatso Mailula"
+        style="width: 100%; height: 100%; object-fit:contain;"
+    >
+</section>
+<!--Introduction section begins here-->
+       <section style="padding: 40px 0;">
+
+    <div style="width: 95%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+
+        <div>
+            <h1>Tshegofatso Mailula</h1>
+            <p><strong>Your bio</strong> - </p>
+        </div>
+
+        <div>
+            <img 
+                src="/me.jpg" 
+                alt="A picture of Tshegofatso Mailula" 
+                style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"
+            >
+        </div>
+
+    </div>
+
+</section>
+        <!--Introduction section ends here-->
+        <footer style="display: flex; justify-content: space-between; padding: 20px;">
+
+    <div style="height: 150px; display: flex; flex-direction: column; justify-content: space-between;">
+
+        <p>2173 Industrial Street, Lenyenye, 0857</p>
+
+        <div style="display: flex; gap: 10px;">
+            <a href="#" style="text-decoration: none; color:black;">
+                 <div style="border: 2px solid black; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <span>T</span>
             </div>
-            <div>
-                <img src="/me.jpg" alt="A picture of Tshegofatso Mailula">
+            </a>
+           
+            <a href="https://www.facebook.com/tshegofatso.sparks.mailula.2025/" style="text-decoration: none; color: black;">
+                  <div style="border: 2px solid black; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <span>F</span>
             </div>
-        </section>
-        <footer>
-            <p>2173 Industrial street, Lenyenye, 0857</p>
-            <a href="#">additional quick links</a>
-            <iframe
-            src="https://maps.google.com/maps?q=-23.9695865,30.2666936&z=17&output=embed"    
-            width="600"
-            height="450"
+            </a>
+          
+            <a href="#" style="text-decoration: none; color: black;">
+                  <div style="border: 2px solid black; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                <span>I</span>
+            </div>
+            </a>
+          
+
+        </div>
+    </div>
+
+    <div>
+        <a href="#" style="text-decoration: none; color:black;">
+            Additional Quick Links
+        </a>
+    </div>
+
+    <div>
+        <iframe
+            src="https://maps.google.com/maps?q=-23.9695865,30.2666936&z=17&output=embed"
+            width="300"
+            height="150"
             style="border:0;"
             loading="lazy">
-            </iframe>
-           
+        </iframe>
+    </div>
 
-        </footer>
+</footer>
     </body>
 </html>
