@@ -1,102 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
     
 <!--Topic: Portfolio website-->
     <!--Author: Tshegofatso Mailula-->
     <!--Submission date: 19 May 2026 by 23:59-->
-
+    <!--Submission type: HTML submission-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio website</title>
+        <title>Portfolio website | Home</title>
     </head>
     <body>
         <header>
-            <nav style="display: flex; justify-content: space-between;padding:15px;">
+            <!--Navigation bar begins here-->
+            <nav >
                 <div>
-                    <a href="#">Logo</a>
+                    <a href="index.html">
+                        <img src="logo.png" alt="Tshegofatso Mailula logo">
+                    </a>
                 </div>
                 <div>
-                    <a href="/index.html" style="padding: 12px; text-decoration:none;color:black;">Home</a>
-                    <a href="/about.html" style="padding: 12px;text-decoration:none;color:black;">About me</a>
-                    <a href="/contact.html" style="padding: 12px;text-decoration:none;color:black;">Contact us</a>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About me</a>
+                    <a href="contact.html">Contact us</a>
                 </div>
                    
             </nav>
+            <!--Navigation bar ends here-->
         </header>
-   <section style="width: 100%; height: 712px; background-color:gray;">
+        <main>
+            <!--Main content image section begins here-->
+   <section >
     <img 
         src="/me.jpg" 
         alt="A picture of Tshegofatso Mailula"
-        style="width: 100%; height: 100%; object-fit:contain;"
     >
 </section>
-<!--Introduction section begins here-->
-       <section style="padding: 40px 0;">
+                    <!--Main content image section ends here-->
+            <!--Main content begins here-->
 
-    <div style="width: 95%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+       <section >
 
         <div>
             <h1>Tshegofatso Mailula</h1>
-            <p><strong>Your bio</strong> - </p>
+            <p><strong>Your bio</strong> - An aspiring software developer currently enrolled in the 2026/2027 Codebrite Academy cohort, passionate about building practical and user-friendly digital solutions.</p>
         </div>
 
         <div>
             <img 
                 src="/me.jpg" 
                 alt="A picture of Tshegofatso Mailula" 
-                style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"
             >
         </div>
-
-    </div>
-
 </section>
-        <!--Introduction section ends here-->
-        <footer style="display: flex; justify-content: space-between; padding: 20px;">
+            <!--Main content ends here-->
 
-    <div style="height: 150px; display: flex; flex-direction: column; justify-content: space-between;">
+        </main>
+
+     
+   <footer >
+
+    <!--Left section of footer begins here, includes street address, contact number and facebook link-->
+    <section >
 
         <p>2173 Industrial Street, Lenyenye, 0857</p>
 
-        <div style="display: flex; gap: 10px;">
-            <a href="#" style="text-decoration: none; color:black;">
-                 <div style="border: 2px solid black; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
-                <span>T</span>
-            </div>
+        <div>
+            <a href="tel:+27687619179">
+                T
             </a>
            
-            <a href="https://www.facebook.com/tshegofatso.sparks.mailula.2025/" style="text-decoration: none; color: black;">
-                  <div style="border: 2px solid black; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
-                <span>F</span>
-            </div>
+            <a href="https://www.facebook.com/tshegofatso.sparks.mailula.2025/">
+            F
             </a>
           
-            <a href="#" style="text-decoration: none; color: black;">
-                  <div style="border: 2px solid black; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
-                <span>I</span>
-            </div>
+            <a href="#">
+                I
             </a>
           
 
         </div>
-    </div>
+    </section>
+    <!--Left section of footer ends here-->
 
-    <div>
-        <a href="#" style="text-decoration: none; color:black;">
+    <!--Middle section of footer begins here, includes additional quick links-->
+    <section>
+        <a href="#">
             Additional Quick Links
         </a>
-    </div>
+    </section>
+    <!--Middle section of footer begins here-->
 
-    <div>
+    <!--Right section of footer begins here, includes the google map-->
+    <section>
         <iframe
             src="https://maps.google.com/maps?q=-23.9695865,30.2666936&z=17&output=embed"
             width="300"
             height="150"
-            style="border:0;"
             loading="lazy">
         </iframe>
-    </div>
+    </section>
+    <!--Right section of footer ends here-->
 
 </footer>
     </body>
