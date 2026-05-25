@@ -1,0 +1,342 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fb;
+    color: #111;
+}
+
+/* Header */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #111;
+    padding: 0.7em 1.2em;
+    margin-left: 0.5em;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background-color: #f1f1f1;
+    opacity: 0.7;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links a.active{
+    background-color: #093c69;
+    color: white;
+}
+
+/* --- Desktop Hamburger Reset --- */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5em;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+.logo{
+    width: 80px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* Bio Section */
+.my-bio{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+}
+
+.my-bio-left-section{
+    flex: 1;
+}
+
+.my-bio-left-section h1{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.my-bio-left-section p{
+    margin-bottom: 1.5em;
+    color: #555;
+}
+
+.my-bio-right-section{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-bio-right-section img{
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.link-button{
+    display: inline-block;
+    padding: 0.9em 1.5em;
+    background-color: #093c69;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.link-button:hover{
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Contact Form */
+.contact-form{
+    width: 100%;
+    max-width: 700px;
+    margin: 4em auto;
+    padding: 2.5em;
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.contact-form h1{
+    margin-bottom: 1em;
+    font-size: 2rem;
+}
+
+.contact-form form{
+    width: 100%;
+}
+
+.contact-form label{
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #093c69;
+}
+
+.contact-form textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form button{
+    padding: 1em;
+    border: none;
+    border-radius: 12px;
+    background-color: #093c69;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    opacity: 0.9;
+}
+
+/* Footer */
+footer{
+    margin-top: 4em;
+    padding: 1.5em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #093c69;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.social-links {
+  display: flex;         
+  gap: 12px;              
+  align-items: center;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;    
+  background: #111;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.google-maps{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.google-maps iframe{
+    width: 280px;      
+    height: 180px;     
+    border: 0;
+    border-radius: 12px;
+}
+
+/* --- Mobile screens --- */
+@media screen and (max-width: 1023px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        position: relative; 
+    }
+
+    .hamburger {
+        display: flex; 
+        z-index: 100;
+    }
+
+    /* Hide desktop nav links and prepare mobile dropdown structure */
+    .nav-links {
+        display: none; /* Hidden for now without JavaScript */
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        padding: 1em 0;
+        flex-direction: column;
+        z-index: 99;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5em 1.5em;
+        text-align: center;
+    }
+
+    .my-bio {
+        display: block;
+        padding: 3em 0;
+    }
+
+    .my-bio-left-section {
+        margin-bottom: 3em;
+    }
+
+    .my-bio-left-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .my-bio-right-section {
+        display: block;
+        text-align: center;
+    }
+
+    .my-bio-right-section img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .contact-form {
+        width: 95%;
+        padding: 1.5em;
+    }
+
+    /* Footer Mobile Layout */
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    footer p,
+    footer a {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .social-links {
+        justify-content: center; 
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .google-maps iframe {
+        width: 90%;
+        max-width: 320px;
+    }
+}
