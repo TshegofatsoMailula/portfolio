@@ -48,7 +48,29 @@ nav a:hover{
     background-color: #093c69;
     color: white;
 }
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-menu-header .logo {
+     width: 80px;
+    height: 35px;
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
 /* --- Desktop Hamburger Reset --- */
 .hamburger {
     display: none;
@@ -247,7 +269,40 @@ footer a{
     border: 0;
     border-radius: 12px;
 }
+.mobile-menu {
+    top: 80px; 
+    left: 0;
+    width: 100%;
+    display: none;
+    padding-top: 2rem;
+    z-index: 1000;
+}
 
+.mobile-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.mobile-menu li:last-child {
+    border-bottom: none;
+}
 /* --- Mobile screens --- */
 @media screen and (max-width: 1023px) {
 
